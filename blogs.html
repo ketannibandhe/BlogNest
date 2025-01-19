@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogs</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/blogs.css">
+</head>
+<body>
+  <header>
+    <h1>BlogNest</h1>
+    <nav id="navbar">
+      <a href="index.html">Home</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="create-blog.html">Create Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Dropdown Menu for Mobile -->
+    <div class="dropdown">
+      <button class="dropbtn">☰</button>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="create-blog.html">Create Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="index.html">Back</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Heading Section -->
+  <div id="blog-heading">
+    <h1>Explore Inspiring Stories and Insights from Our Blog Community</h1>
+  </div>
+  <main>
+    <section id="blog-list">
+      <!-- Blogs will be dynamically inserted here -->
+    </section>
+    <button onclick="location.href='create-blog.html'" class="seeAll">
+      Write Your Blog here
+    </button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Blog Website</p>
+  </footer>
+
+  <script src="./js/create-blog-array.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Blog</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/create-blog.css">
+</head>
+<body>
+  <header>
+    <h1>BlogNest</h1>
+    <nav id="navbar">
+      <a href="index.html">Home</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="create-blog.html">Create Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Dropdown Menu for Mobile -->
+    <div class="dropdown">
+      <button class="dropbtn">☰</button>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="create-blog.html">Create Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="index.html">Back</a>
+      </div>
+    </div>
+  </header>
+  <main class="blog-container">
+    <div class="blog-card">
+      <!-- Blog Content Section -->
+      <div class="blog-content">
+        <h2>Create Your Blog</h2>
+        <form id="blog-form">
+          <label for="username">Username:</label>
+          <input type="text" id="username" placeholder="Enter your username" required>
+
+          <label for="title">Blog Title:</label>
+          <input type="text" id="title" placeholder="Enter the blog title" required>
+
+          <label for="description">Description:</label>
+          <textarea id="description" rows="5" placeholder="Write your blog here..." required></textarea>
+          <button type="button" id="open-editor">Open Text Editor</button>
+          <button type="submit">Publish Blog</button>
+        </form>
+      </div>
+      <!-- Blog Image Section -->
+      <div class="blog-image">
+        <img src="./assets/images/i1.jpg" loading="lazy" alt="Blog Illustration">
+      </div>
+    </div>
+  </main>
+  <footer>
+    &copy; 2025 Blog Website
+  </footer>
+
+  <script src="js/create-blog.js"></script>
+</body>
+</html>

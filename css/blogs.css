@@ -1,0 +1,142 @@
+/* Global Styles */
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #023e8a;
+  line-height: 1.6;
+  background: linear-gradient(to right, #caf0f8, #fff);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Main Section */
+main {
+  padding: 20px;
+  margin-top: 10px;
+  flex-grow: 1;
+}
+
+/* Blog Cards */
+.blog-card {
+  background: #fff;
+  border: 1px solid #023e8a;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.blog-card h2 {
+  font-size: 20px;
+  color: #023e8a;
+}
+
+.blog-card .blog-meta {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.blog-card p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #023e8a;
+  color: #fff;
+  margin-top: auto;
+}
+
+button{
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #023e8a;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+}
+
+button:hover{
+  background-color: #226bca;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .blog-card {
+    padding: 15px;
+  }
+
+  .blog-card h2 {
+    font-size: 18px;
+  }
+
+  .blog-card p {
+    font-size: 14px;
+  }
+}
+
+
+/* Blog Heading Section */
+#blog-heading {
+  text-align: center;
+  margin: 60px 0 0px;
+  transition: opacity 0.5s ease;
+}
+
+#blog-heading h1 {
+  font-size: 28px;
+  color: #023e8a;
+}
+
+.search-input {
+  display: block;
+  margin: 10px auto;
+  padding: 8px 12px;
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sort-dropdown {
+  display: block;
+  margin: 10px auto;
+  padding: 8px 12px;
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.blog-card {
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog-meta {
+  font-size: 0.9em;
+  color: #555;
+}
+
